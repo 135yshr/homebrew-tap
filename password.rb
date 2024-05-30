@@ -9,16 +9,16 @@ class Password < Formula
 
   on_macos do
     on_intel do
-      url "https://github.com/135yshr/password/releases/download/v0.1.2/password_Darwin_x86_64.tar.gz"
-      sha256 "7cd0d13f26700905846ac78d221c2e82547924ea49f979efa9aa4841d72daff6"
+      url "https://github.com/135yshr/password/releases/download/v0.1.2/mkpass_Darwin_x86_64.tar.gz"
+      sha256 "8a8ade00e3fac60417cbf03bc3b486289e5fb76e01a310c3f18a1437ba0fa629"
 
       def install
         bin.install "mkpass"
       end
     end
     on_arm do
-      url "https://github.com/135yshr/password/releases/download/v0.1.2/password_Darwin_arm64.tar.gz"
-      sha256 "9c8471d004ec127b8dc5b0889213a6e2e75fe408ebbb73d6ef48b1b8246a4b78"
+      url "https://github.com/135yshr/password/releases/download/v0.1.2/mkpass_Darwin_arm64.tar.gz"
+      sha256 "a1d100040758e64bdb177344b98ebc31f27bc98c0952c795853b6ce5936a4852"
 
       def install
         bin.install "mkpass"
@@ -29,8 +29,8 @@ class Password < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/135yshr/password/releases/download/v0.1.2/password_Linux_x86_64.tar.gz"
-        sha256 "85fbae2dbd9473da67502469a20487f15427bb7248a4f7ffd1450333dd26cc70"
+        url "https://github.com/135yshr/password/releases/download/v0.1.2/mkpass_Linux_x86_64.tar.gz"
+        sha256 "9474b6cef62ff3035c2429948837d37452405411a19c4ed6e2fc642780149246"
 
         def install
           bin.install "mkpass"
@@ -39,8 +39,8 @@ class Password < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/135yshr/password/releases/download/v0.1.2/password_Linux_arm64.tar.gz"
-        sha256 "eebe30c5b3916c779e0823d7c845e0d2e05f025959b1cdc9fcc13aca69315f62"
+        url "https://github.com/135yshr/password/releases/download/v0.1.2/mkpass_Linux_arm64.tar.gz"
+        sha256 "d86ca4810e61569e5cc6feae209cc136faa27128eccc079725b9ea513e40442f"
 
         def install
           bin.install "mkpass"

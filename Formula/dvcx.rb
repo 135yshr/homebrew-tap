@@ -11,7 +11,7 @@ class Dvcx < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/135yshr/devcycle-cli/releases/download/v0.2.1/dvcx_0.2.1_darwin_amd64.tar.gz"
-      sha256 "520a2de515f2e7bcac06ddbd8873bb499d7a4d3d58384374d327952ab3bbf9dc"
+      sha256 "b7e4e9914575178c53ee476521abe9a37c498d5ef30761ce568b679b36d941ed"
 
       def install
         bin.install "dvcx"
@@ -19,7 +19,7 @@ class Dvcx < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/135yshr/devcycle-cli/releases/download/v0.2.1/dvcx_0.2.1_darwin_arm64.tar.gz"
-      sha256 "d544b094e9b33e3d789d3fb493090ad3a2a433570e8b3a521676971fd2ff6889"
+      sha256 "1a28a55ff900d2996c8bdc809db47f40d2fd8e11e783bceaca32a0766cd82f4d"
 
       def install
         bin.install "dvcx"
@@ -30,14 +30,14 @@ class Dvcx < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/135yshr/devcycle-cli/releases/download/v0.2.1/dvcx_0.2.1_linux_amd64.tar.gz"
-      sha256 "c1fd446e007dd49290df8e685d4206b542335293766bb420e83ce47372a4b302"
+      sha256 "167906e8cffd1476ae0e435d0b2421c9a2675116e780de613c4dcb0748c302f4"
       def install
         bin.install "dvcx"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/135yshr/devcycle-cli/releases/download/v0.2.1/dvcx_0.2.1_linux_arm64.tar.gz"
-      sha256 "ab2de80b9226d4d7fddf6b47c4c574cd993e69ef2309e56527fc8fdd146aef81"
+      sha256 "af418603a78bf200de5fc08ca3c41efe5437bb55e39581dc39457ec6172f0476"
       def install
         bin.install "dvcx"
       end

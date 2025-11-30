@@ -5,21 +5,21 @@
 class Dvcx < Formula
   desc "Unofficial CLI for DevCycle Management API"
   homepage "https://github.com/135yshr/devcycle-cli"
-  version "0.2.2"
+  version "0.2.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/135yshr/devcycle-cli/releases/download/v0.2.2/dvcx_0.2.2_darwin_amd64.tar.gz"
-      sha256 "7cdb73e70307ee735a9778747e9abde1165918e40a3b23d175cdef768ab6d154"
+      url "https://github.com/135yshr/devcycle-cli/releases/download/v0.2.3/dvcx_0.2.3_darwin_amd64.tar.gz"
+      sha256 "1dd993676009a1e019ddeeea602ce13b8a83e96478c25d68d96e18bec801ea88"
 
       def install
         bin.install "dvcx"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/135yshr/devcycle-cli/releases/download/v0.2.2/dvcx_0.2.2_darwin_arm64.tar.gz"
-      sha256 "11d6ced7eed5602f2480ba02f310af028b0493884cb379bbdd5a8d9dcbb0c63f"
+      url "https://github.com/135yshr/devcycle-cli/releases/download/v0.2.3/dvcx_0.2.3_darwin_arm64.tar.gz"
+      sha256 "0f3985edcd7bf01db710ffe4153d4807c4c0c68774d5d719144af2c1a6ad5648"
 
       def install
         bin.install "dvcx"
@@ -29,15 +29,15 @@ class Dvcx < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/135yshr/devcycle-cli/releases/download/v0.2.2/dvcx_0.2.2_linux_amd64.tar.gz"
-      sha256 "4d5ec7fb57e349f5682f2dc8bb386df9f7efe79c4d7bfd953ced04a5d4246023"
+      url "https://github.com/135yshr/devcycle-cli/releases/download/v0.2.3/dvcx_0.2.3_linux_amd64.tar.gz"
+      sha256 "8672d9beb20e609615ce696414383387469745d649153a182f4f817a624c7f8b"
       def install
         bin.install "dvcx"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/135yshr/devcycle-cli/releases/download/v0.2.2/dvcx_0.2.2_linux_arm64.tar.gz"
-      sha256 "5b774a0d440774f1c1764c5bc09d4f45edd57a6b6bee003132fcad3b82bb5cb0"
+      url "https://github.com/135yshr/devcycle-cli/releases/download/v0.2.3/dvcx_0.2.3_linux_arm64.tar.gz"
+      sha256 "62d5342ac729b6b32fa08bb8f356a6bfcf97285b1e35b443c863d022f1f27725"
       def install
         bin.install "dvcx"
       end

@@ -3,7 +3,7 @@ cask "meow" do
   name "meow"
   desc "The purrfect functional programming language"
   homepage "https://github.com/135yshr/meow"
-  version "0.5.1"
+  version "0.5.2"
 
   livecheck do
     skip "Auto-generated on release."
@@ -15,12 +15,12 @@ cask "meow" do
     on_intel do
       url "https://github.com/135yshr/meow/releases/download/v#{version}/meow_#{version}_darwin_amd64.tar.gz",
         verified: "github.com/135yshr/meow"
-      sha256 "fb11863b6d2b4d6895ec8d86b8a2ea35edbc381e17019049c366e395097ff239"
+      sha256 "b20622c8332013d0c844d173baebc4f73ba4db9d1d5b44fbc550d7506ffb8912"
     end
     on_arm do
       url "https://github.com/135yshr/meow/releases/download/v#{version}/meow_#{version}_darwin_arm64.tar.gz",
         verified: "github.com/135yshr/meow"
-      sha256 "b304aea7dac402ae2ff4ad81310cab94698889e67a8e18efa9db8582f2a19b8c"
+      sha256 "723baff81bb0281c250210e89ed26d175b6040d7ae9c743a84a04516aa72f8b9"
     end
   end
 
@@ -28,12 +28,12 @@ cask "meow" do
     on_intel do
       url "https://github.com/135yshr/meow/releases/download/v#{version}/meow_#{version}_linux_amd64.tar.gz",
         verified: "github.com/135yshr/meow"
-      sha256 "4f37aa14939d491b51115e58e59a619b983d9dd3e8091b0ad440158edf9688ef"
+      sha256 "f0d1453c63a67800e725caf6277842e719c1ca706e14324e28a9c13894fda3d4"
     end
     on_arm do
       url "https://github.com/135yshr/meow/releases/download/v#{version}/meow_#{version}_linux_arm64.tar.gz",
         verified: "github.com/135yshr/meow"
-      sha256 "efeaa2080004223b0cfede9ccd46fd25f89fcd06af1077ca808bdaa9456016b0"
+      sha256 "c15721317620ef49c0b8e1c29fd7ae382d9606ed570db0206ccd9ce4aaae6096"
     end
   end
 

@@ -5,21 +5,21 @@
 class Md2pdf < Formula
   desc "A CLI tool that converts Markdown files to PDF with GitHub-flavored styling"
   homepage "https://github.com/135yshr/md2pdf"
-  version "0.2.3"
+  version "0.2.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/135yshr/md2pdf/releases/download/v0.2.3/md2pdf_0.2.3_darwin_amd64.tar.gz"
-      sha256 "5a7b032d57c78b4808549e7488ea1277b4f9d88940804fc578941574d7834423"
+      url "https://github.com/135yshr/md2pdf/releases/download/v0.2.4/md2pdf_0.2.4_darwin_amd64.tar.gz"
+      sha256 "f28e73deb8e7638ed488dde3f2f848cf816d5f6f07cfc9884cd3a484e0537270"
 
       define_method(:install) do
         bin.install "md2pdf"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/135yshr/md2pdf/releases/download/v0.2.3/md2pdf_0.2.3_darwin_arm64.tar.gz"
-      sha256 "59ec148ede1a0fe866f1795a9ccb76b462de7e7f0ea2b33d441f5b8b6cd85ff4"
+      url "https://github.com/135yshr/md2pdf/releases/download/v0.2.4/md2pdf_0.2.4_darwin_arm64.tar.gz"
+      sha256 "c113903f44b7dcf82ab06d1855c10bc3beee9a9eb26ec2d6fe8b926546f94ae1"
 
       define_method(:install) do
         bin.install "md2pdf"
@@ -29,15 +29,15 @@ class Md2pdf < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/135yshr/md2pdf/releases/download/v0.2.3/md2pdf_0.2.3_linux_amd64.tar.gz"
-      sha256 "b0c5b1a5a1c7f0056257bd6861f22a603c0db7ec84e4db6c5d3a1c86ddd9fb4a"
+      url "https://github.com/135yshr/md2pdf/releases/download/v0.2.4/md2pdf_0.2.4_linux_amd64.tar.gz"
+      sha256 "65fe3a048b40a4e21fcbc49e88af0e5a4861723848def2511592a61cad77183c"
       define_method(:install) do
         bin.install "md2pdf"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/135yshr/md2pdf/releases/download/v0.2.3/md2pdf_0.2.3_linux_arm64.tar.gz"
-      sha256 "16f94ba0740d4a40bfa992d54f05121fd938dae939faf9d85de56a86b53f391b"
+      url "https://github.com/135yshr/md2pdf/releases/download/v0.2.4/md2pdf_0.2.4_linux_arm64.tar.gz"
+      sha256 "c8b14db4829a7f1996bd4a6020de46d8a8c5dc09fe68e49eb79de2d6ed8efd89"
       define_method(:install) do
         bin.install "md2pdf"
       end

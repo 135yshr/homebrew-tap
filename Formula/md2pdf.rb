@@ -5,7 +5,7 @@
 class Md2pdf < Formula
   desc "A CLI tool that converts Markdown files to PDF with GitHub-flavored styling"
   homepage "https://github.com/135yshr/md2pdf"
-  version "0.17.0"
+  version "0.18.0"
   license "MIT"
 
   depends_on "mermaid-cli"
@@ -13,8 +13,8 @@ class Md2pdf < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/135yshr/md2pdf/releases/download/v0.17.0/md2pdf_0.17.0_darwin_amd64.tar.gz"
-      sha256 "7a464fc2fc76235d36164812a381780834159409fa38b414553c6354c33f0d62"
+      url "https://github.com/135yshr/md2pdf/releases/download/v0.18.0/md2pdf_0.18.0_darwin_amd64.tar.gz"
+      sha256 "30b2a4e88a40146429303bf6afff4410f850ce26665c211f446ab4ded6dd3d3c"
 
       define_method(:install) do
         bin.install "md2pdf"
@@ -22,8 +22,8 @@ class Md2pdf < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/135yshr/md2pdf/releases/download/v0.17.0/md2pdf_0.17.0_darwin_arm64.tar.gz"
-      sha256 "e395f3a369809aaddf7abc43bd487b841b1c9a681cadef0982ad9cecaeecc450"
+      url "https://github.com/135yshr/md2pdf/releases/download/v0.18.0/md2pdf_0.18.0_darwin_arm64.tar.gz"
+      sha256 "4b9f90d427e89bc7a71db270a18e04a7cbc6f0763e9b6cbb5626af1002d5ba8c"
 
       define_method(:install) do
         bin.install "md2pdf"
@@ -34,16 +34,16 @@ class Md2pdf < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/135yshr/md2pdf/releases/download/v0.17.0/md2pdf_0.17.0_linux_amd64.tar.gz"
-      sha256 "d37628a3fb26f923691d0b4578b1192e906e6779a1e0abc1fb7d1c8abb5fb7bb"
+      url "https://github.com/135yshr/md2pdf/releases/download/v0.18.0/md2pdf_0.18.0_linux_amd64.tar.gz"
+      sha256 "51a571d07d38ba691b36bbe9954d3c321c49001731fc5b2099c27f90d9517a2f"
       define_method(:install) do
         bin.install "md2pdf"
         bin.install_symlink bin/"md2pdf" => "mdview"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/135yshr/md2pdf/releases/download/v0.17.0/md2pdf_0.17.0_linux_arm64.tar.gz"
-      sha256 "a61a5798d3caa103424ec15488cc2c46f83778e4ae2156f76f11e0b33278fcf7"
+      url "https://github.com/135yshr/md2pdf/releases/download/v0.18.0/md2pdf_0.18.0_linux_arm64.tar.gz"
+      sha256 "8a929749c7c1bfe9d87ff2dd0aa5b3689de5dc1540d518a13e84ea73689aadca"
       define_method(:install) do
         bin.install "md2pdf"
         bin.install_symlink bin/"md2pdf" => "mdview"
